@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    background-color: #1AB59C;
+    justify-content: space-around;
+    padding: 1vh 0;
+    color: white;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+nav .logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: #61d8c4;
+}
+
+/* Main Content */
+.container {
+    display: flex;
+    padding: 100px 150px;
+    background-color: rgb(241, 241, 241);
+    height: 65vh;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .sec1 {
+    line-height: 70px;
+}
+
+.container .hero-img {
+    width: 20%;
+}
+
+.container .sec1 h1 {
+    font-weight: 800;
+    font-size: 55px;
+}
+
+span {
+    color: #1AB59C;
+}
+
+.container .sec1 .desc {
+    font-size: 20px;
+    max-width: 700px;
+    line-height: 30px;
+    margin: 30px 0;
+    cursor: grab;
+}
+
+button {
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 7px;
+    background-color: #1AB59C;
+    color: white;
+    cursor: pointer;
+    border: none;
+    box-shadow: 10px 10px 20px rgb(224, 224, 224);
+}
+
+button:hover {
+    background-color: #158f7b;
+    box-shadow: 10px 10px 20px rgb(224, 224, 224);
+    animation-name: button-flying;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* Button Animation */
+@keyframes button-flying {
+    0% {
+        margin-top: -5;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+/* Responsive */
+/* Tablet */
+@media screen and (max-width: 1000px) {
+    nav ul {
+        width: 50%;
+    }
+
+    img {
+        margin: 25px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 740px) {
+    nav ul {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        padding: 100px 5px;
+    }
+}
