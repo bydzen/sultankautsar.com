@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <!-- Meta -->
@@ -9,7 +10,7 @@
     <meta name="title" content="Sultan Kautsar - Technology Enthusiast" />
     <meta
       name="description"
-      content="Hello, I'm Sultan Kautsar. I'm a Founder at my personal agencies, Rayatiga. This agencies is engaged in Information Technology WHMCS."
+      content="Hello, I'm Sultan Kautsar. I'm a Founder at my personal agencies, Rayatiga. This agencies is engaged in Web and Hosting."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sultankautsar.com/" />
@@ -19,7 +20,7 @@
     />
     <meta
       property="og:description"
-      content="Hello, I'm Sultan Kautsar. I'm a Founder at my personal agencies, Rayatiga. This agencies is engaged in Information Technology WHMCS."
+      content="Hello, I'm Sultan Kautsar. I'm a Founder at my personal agencies, Rayatiga. This agencies is engaged in Web and Hosting."
     />
     <meta
       property="og:image"
@@ -33,7 +34,7 @@
     />
     <meta
       property="twitter:description"
-      content="Hello, I'm Sultan Kautsar. I'm a Founder at my personal agencies, Rayatiga. This agencies is engaged in Information Technology WHMCS."
+      content="Hello, I'm Sultan Kautsar. I'm a Founder at my personal agencies, Rayatiga. This agencies is engaged in Web and Hosting."
     />
     <meta
       property="twitter:image"
@@ -43,8 +44,8 @@
     <!-- Title -->
     <title>Sultan Kautsar - Technology Enthusiast</title>
 
-    <!-- Link -->
-    <!-- Google Font -->
+    <!-- Links -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -79,6 +80,7 @@
       * {
         margin: 0;
         padding: 0;
+        zoom: 100%;
         /* Color */
         --dark: #0b0b0b;
         --light: #fbfbfb;
@@ -92,7 +94,6 @@
         flex-direction: column;
         align-items: center;
         background-color: var(--dark);
-        height: 100vh;
         scrollbar-width: none;
         color: var(--light);
       }
@@ -132,6 +133,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all 0.2s ease-in-out;
       }
 
       main > a:hover {
@@ -160,16 +162,19 @@
         padding-bottom: 50px;
       }
 
+      /* Larger Screen 4K */
+      @media (min-width: 2560px) {
+        * {
+          zoom: 110%;
+        }
+      }
+
       /* Mobile Screen */
       @media (max-width: 480px) {
         header {
           display: flex;
           flex-direction: column;
           align-items: center;
-        }
-
-        header > img {
-          width: 125px;
         }
 
         header > h1 {
@@ -217,7 +222,7 @@
       <h1>*** Sultan Kautsar ***</h1>
     </header>
 
-    <!-- Main Content -->
+    <!-- Main -->
     <main>
       <a
         href="https://links.rayatiga.com/"
@@ -400,10 +405,11 @@
       </a>
     </main>
 
-    <!-- Footer  -->
+    <!-- Footer -->
     <footer>
       <p>
         Built by
+
         <a
           href="https://sultankautsar.com/"
           target="_blank"
