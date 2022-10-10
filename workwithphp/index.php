@@ -1,3 +1,4 @@
+<!-- include the header -->
 <?php
 include './template/header.php'; ?>
 
@@ -37,4 +38,5 @@ include './template/header.php'; ?>
     </div>
 </main>
 
+<!-- include the footer -->
 <?php include './template/footer.php'; ?>
