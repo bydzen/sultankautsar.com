@@ -18,3 +18,5 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SULTANKAUTSARCOM }}'
           channelId: live
           projectId: sultankautsarcom
+runs:
+  using: "node16"
