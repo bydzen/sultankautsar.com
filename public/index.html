@@ -87,7 +87,7 @@
             }
 
             h1 {
-                margin-top: -5vh;
+                margin-top: -7vh;
                 font-weight: 800;
                 font-size: 2rem;
             }
@@ -119,28 +119,40 @@
             #lightSwitch {
                 transform: scale(1.25);
             }
+
+            .gradient-text {
+                background: -webkit-linear-gradient(-45deg, rgb(255, 110, 110), rgb(138, 112, 255));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent;
+                text-decoration: none;
+                transition: 0.25s;
+            }
         </style>
     </head>
     <body class="container-fluid bg-light overflow-hidden">
         <!-- Main Content -->
         <main class="container d-flex flex-column vh-100 justify-content-center align-items-center">
-            <div class="form-check form-switch text-center d-flex flex-row position-absolute top-0 end-0 p-5">
+            <div
+                class="form-check form-switch text-center d-flex flex-row position-absolute top-0 end-0 p-5"
+            >
                 <input class="form-check-input" type="checkbox" id="lightSwitch" />
                 <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 ms-2"
-            >
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
-                />
-            </svg>
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 ms-2"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                    />
+                </svg>
             </div>
             <h1 class="text-center">Sultan Kautsar</h1>
             <p class="lead text-center col-lg-9 fs-6">
@@ -157,7 +169,13 @@
                 ecosystem. I'm also a UI/UX, Web Developer and a Technology Enthusiast.
             </p>
 
-            <div class="text-dark fs-4 d-flex justify-content-center flex-wrap gap-3">
+            <a
+                href="https://profile.sultankautsar.com/"
+                class="lead text-center fw-bold gradient-text mb-4"
+                >more about me →</a
+            >
+
+            <div class="text-dark fs-4 d-flex justify-content-center flex-wrap gap-2">
                 <a
                     href="https://linkedin.com/in/sultankautsar"
                     target="_blank"
