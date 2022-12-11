@@ -11,14 +11,14 @@
         <meta name="title" content="Sultan Kautsar - Technology Enthusiast" />
         <meta
             name="description"
-            content="Hello, I'm Sultan Kautsar. I'm a Founder at my personal agencies, Rayatiga. This agencies is engaged in Web and Hosting. I'm also a UI/UX and Web Developer and a Technology Enthusiast."
+            content="Hello, I'm Sultan Kautsar. I'm a Founder at my personal agencies, Rayatiga. This agencies is engaged in Web and Hosting. I'm also a UI/UX, Web Developer and a Technology Enthusiast."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sultankautsar.com/" />
         <meta property="og:title" content="Sultan Kautsar - Technology Enthusiast" />
         <meta
             property="og:description"
-            content="Hello, I'm Sultan Kautsar. I'm a Founder at my personal agencies, Rayatiga. This agencies is engaged in Web and Hosting. I'm also a UI/UX and Web Developer and a Technology Enthusiast."
+            content="Hello, I'm Sultan Kautsar. I'm a Founder at my personal agencies, Rayatiga. This agencies is engaged in Web and Hosting. I'm also a UI/UX, Web Developer and a Technology Enthusiast."
         />
         <meta property="og:image" content="https://sultankautsar.com/assets/img/sk-og.png" />
         <meta property="twitter:card" content="summary_large_image" />
@@ -26,7 +26,7 @@
         <meta property="twitter:title" content="Sultan Kautsar - Technology Enthusiast" />
         <meta
             property="twitter:description"
-            content="Hello, I'm Sultan Kautsar. I'm a Founder at my personal agencies, Rayatiga. This agencies is engaged in Web and Hosting. I'm also a UI/UX and Web Developer and a Technology Enthusiast."
+            content="Hello, I'm Sultan Kautsar. I'm a Founder at my personal agencies, Rayatiga. This agencies is engaged in Web and Hosting. I'm also a UI/UX, Web Developer and a Technology Enthusiast."
         />
         <meta property="twitter:image" content="https://sultankautsar.com/assets/img/sk-og.png" />
 
@@ -101,13 +101,49 @@
                 color: #ffffff;
                 background: #d7457d;
             }
+
+            .btn-purple {
+                color: #ffffff;
+                background: #bc34e6;
+            }
+
+            .btn.btn-purple:hover {
+                color: #ffffff;
+                background: #a129c5;
+            }
+
+            .btn-dark {
+                outline: 0.1rem solid #ffffff;
+            }
+
+            #lightSwitch {
+                transform: scale(1.25);
+            }
         </style>
     </head>
     <body class="container-fluid bg-light overflow-hidden">
         <!-- Main Content -->
         <main class="container d-flex flex-column vh-100 justify-content-center align-items-center">
-            <h1 class="text-dark text-center">Sultan Kautsar</h1>
-            <p class="lead text-dark text-center col-lg-9 fs-6">
+            <div class="form-check form-switch text-center d-flex flex-row position-absolute top-0 end-0 p-5">
+                <input class="form-check-input" type="checkbox" id="lightSwitch" />
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 ms-2"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                />
+            </svg>
+            </div>
+            <h1 class="text-center">Sultan Kautsar</h1>
+            <p class="lead text-center col-lg-9 fs-6">
                 I'm Founder at my agency,
                 <a href="https://rayatiga.com" class="fw-bold link-primary text-decoration-none"
                     >Rayatiga</a
@@ -118,7 +154,7 @@
                     class="fw-bold link-primary text-decoration-none"
                     >Rayatiga Hosting</a
                 >, reservation of top-level domains, to the provision of a CMS-based website
-                ecosystem.
+                ecosystem. I'm also a UI/UX, Web Developer and a Technology Enthusiast.
             </p>
 
             <div class="text-dark fs-4 d-flex justify-content-center flex-wrap gap-3">
@@ -135,7 +171,10 @@
                 <a href="https://github.com/bydzen" target="_blank" class="btn btn-dark">
                     <i class="bi bi-github pe-2"></i>GitHub
                 </a>
-                <a href="https://links.rayatiga.com/" target="_blank" class="btn btn-info">
+                <a href="https://sultankautsar.com/link" target="_blank" class="btn btn-purple">
+                    <i class="bi bi-globe pe-2"></i>Link
+                </a>
+                <a href="https://sultankautsar.com/project" target="_blank" class="btn btn-info">
                     <i class="bi bi-laptop-fill pe-2"></i>Project
                 </a>
                 <a href="https://rayatiga.com" target="_blank" class="btn btn-success">
@@ -149,5 +188,8 @@
                 </a>
             </div>
         </main>
+
+        <!-- Switch Light/Dark Mode -->
+        <script src="./assets/js/switch.js"></script>
     </body>
 </html>
