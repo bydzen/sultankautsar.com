@@ -82,62 +82,69 @@
             }
 
             *::selection {
-                background-color: #bb2d3b;
-                color: #ffffff;
+                background-color: #212529;
+                color: #f8f9fa;
             }
 
             h1 {
-                margin-top: -7vh;
                 font-weight: 800;
                 font-size: 2rem;
             }
 
-            .btn-pink {
-                color: #ffffff;
-                background: #ea4c89;
+            a.linkdesc {
+                background: -webkit-linear-gradient(
+                    -45deg,
+                    rgb(150, 150, 150),
+                    rgb(120, 120, 120),
+                    rgb(190, 190, 190),
+                    rgb(140, 140, 140)
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                opacity: 0.75;
+                transition: 0.25s;
             }
 
-            .btn.btn-pink:hover {
-                color: #ffffff;
-                background: #d7457d;
-            }
-
-            .btn-purple {
-                color: #ffffff;
-                background: #bc34e6;
-            }
-
-            .btn.btn-purple:hover {
-                color: #ffffff;
-                background: #a129c5;
-            }
-
-            .btn-dark {
-                outline: 0.1rem solid #ffffff;
+            a.linkdesc:hover {
+                opacity: 1;
             }
 
             #lightSwitch {
                 transform: scale(1.25);
             }
 
-            .gradient-text {
-                background: -webkit-linear-gradient(-45deg, rgb(255, 110, 110), rgb(138, 112, 255));
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                -moz-background-clip: text;
-                -moz-text-fill-color: transparent;
-                text-decoration: none;
+            .gradient-bg {
+                background: -webkit-linear-gradient(
+                    -45deg,
+                    rgb(225, 225, 225),
+                    rgb(190, 190, 190),
+                    rgb(240, 240, 240),
+                    rgb(210, 210, 210)
+                );
+                padding: 0.5rem 2rem;
+                border: 0.15rem solid #212529;
+                border-radius: 0.5rem;
+                opacity: 0.75;
                 transition: 0.25s;
+            }
+
+            .gradient-bg:hover {
+                opacity: 1;
             }
         </style>
     </head>
     <body class="container-fluid bg-light overflow-hidden">
         <!-- Main Content -->
         <main class="container d-flex flex-column vh-100 justify-content-center align-items-center">
+            <!-- Theme button -->
             <div
                 class="form-check form-switch text-center d-flex flex-row position-absolute top-0 end-0 p-5"
             >
-                <input class="form-check-input" type="checkbox" id="lightSwitch" />
+                <input
+                    class="form-check-input bg-dark border border-1 border-opacity-75 border-secondary"
+                    type="checkbox"
+                    id="lightSwitch"
+                />
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"
@@ -154,57 +161,26 @@
                     />
                 </svg>
             </div>
+
+            <!-- Content -->
             <h1 class="text-center">Sultan Kautsar</h1>
             <p class="lead text-center col-lg-9 fs-6">
                 I'm Founder at my agency,
-                <a href="https://rayatiga.com" class="fw-bold link-primary text-decoration-none"
+                <a href="https://rayatiga.com/" class="fw-bold linkdesc text-decoration-none"
                     >Rayatiga</a
                 >
                 where is providing Website Establishment Solutions or as known as WHMCS at
-                <a
-                    href="https://hosting.rayatiga.com"
-                    class="fw-bold link-primary text-decoration-none"
+                <a href="https://hosting.rayatiga.com/" class="fw-bold linkdesc text-decoration-none"
                     >Rayatiga Hosting</a
                 >, reservation of top-level domains, to the provision of a CMS-based website
                 ecosystem. I'm also a UI/UX, Web Developer and a Technology Enthusiast.
             </p>
 
             <a
-                href="https://profile.sultankautsar.com/"
-                class="lead text-center fw-bold gradient-text mb-4"
-                >more about me →</a
-            >
-
-            <div class="text-dark fs-4 d-flex justify-content-center flex-wrap gap-2">
-                <a
-                    href="https://linkedin.com/in/sultankautsar"
-                    target="_blank"
-                    class="btn btn-primary"
-                >
-                    <i class="bi bi-linkedin pe-2"></i>LinkedIn
-                </a>
-                <a href="https://instagram.com/bydzen" target="_blank" class="btn btn-danger">
-                    <i class="bi bi-instagram pe-2"></i>Instagram
-                </a>
-                <a href="https://github.com/bydzen" target="_blank" class="btn btn-dark">
-                    <i class="bi bi-github pe-2"></i>GitHub
-                </a>
-                <a href="https://sultankautsar.com/link" target="_blank" class="btn btn-purple">
-                    <i class="bi bi-globe pe-2"></i>Link
-                </a>
-                <a href="https://sultankautsar.com/project" target="_blank" class="btn btn-info">
-                    <i class="bi bi-laptop-fill pe-2"></i>Project
-                </a>
-                <a href="https://rayatiga.com" target="_blank" class="btn btn-success">
-                    <i class="bi bi-briefcase-fill pe-2"></i>Agency
-                </a>
-                <a href="https://dribbble.com/bydzen" target="_blank" class="btn btn-pink">
-                    <i class="bi bi-dribbble pe-2"></i>Dribbble
-                </a>
-                <a href="mailto:contact@sultankautsar.com" class="btn btn-warning">
-                    <i class="bi bi-envelope-fill pe-2"></i>Email
-                </a>
-            </div>
+                href="https://sultankautsar.com/navigate/"
+                class="text-center fw-bold gradient-bg mb-4 text-dark text-decoration-none"
+                >Navigate <i class="bi bi-cup-hot ms-1"></i
+            ></a>
         </main>
 
         <!-- Switch Light/Dark Mode -->
