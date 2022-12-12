@@ -51,367 +51,170 @@
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
 
-        <!-- Animate CSS -->
+        <!-- Link -->
+        <!-- Bootstrap CSS only -->
         <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
         />
 
+        <!-- Bootstrap Icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+        />
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Script -->
+        <!-- Bootsrtap JavaScript Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Embed CSS Style -->
         <style>
             * {
-                margin: 0;
-                padding: 0;
+                font-family: 'Poppins', sans-serif;
             }
 
-            body {
-                font-family: 'Kanit', sans-serif;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background-color: #eee;
-                height: 100vh;
-                scrollbar-width: none;
+            *::selection {
+                background-color: #bb2d3b;
+                color: #ffffff;
             }
 
-            body::-webkit-scrollbar {
-                display: none;
+            h1 {
+                margin-top: -7vh;
+                font-weight: 800;
+                font-size: 2rem;
             }
 
-            header {
-                padding: 50px 0;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+            .btn-pink {
+                color: #ffffff;
+                background: #ea4c89;
             }
 
-            header > img {
-                width: 200px;
-                border-radius: 100%;
-                border: 3px solid #333;
-                transition: ease-in-out 0.25s;
+            .btn.btn-pink:hover {
+                color: #ffffff;
+                background: #d7457d;
             }
 
-            header > img:hover {
-                filter: invert(0.85);
-                border: 3px solid #eee;
-                cursor: pointer;
+            .btn-purple {
+                color: #ffffff;
+                background: #bc34e6;
             }
 
-            header > h1 {
-                margin-top: 10px;
+            .btn.btn-purple:hover {
+                color: #ffffff;
+                background: #a129c5;
             }
 
-            main {
-                display: flex;
-                flex-direction: column;
+            .btn-dark {
+                outline: 0.1rem solid #ffffff;
             }
 
-            main > a {
-                color: #eee;
-                font-weight: 500;
-                letter-spacing: 1px;
-                font-size: 20px;
+            #lightSwitch {
+                transform: scale(1.25);
+            }
+
+            .gradient-text {
+                background: -webkit-linear-gradient(-45deg, rgb(255, 110, 110), rgb(138, 112, 255));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent;
                 text-decoration: none;
-                background-color: #333;
-                border-radius: 7px;
-                width: 375px;
-                margin-bottom: 20px;
-                padding: 15px 20px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transition: ease-in-out 0.25s;
-            }
-
-            main > a:hover {
-                background-color: #eee;
-                outline: 1px solid #333;
-                color: #333;
-                box-shadow: 10px 10px 0 #333;
-            }
-
-            main > a > p {
-                width: 100%;
-                text-align: center;
-            }
-
-            .icons {
-                display: flex;
-            }
-
-            footer {
-                margin-top: 20px;
-                font-size: 20px;
-            }
-
-            footer > p > a {
-                color: #555;
-                text-decoration: underline;
-                text-underline-offset: 2px;
-                padding-bottom: 50px;
-            }
-
-            :root {
-                --animate-delay: 0.75s;
-            }
-
-            @media screen and (max-width: 480px) {
-                header {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-
-                header > img {
-                    width: 125px;
-                }
-
-                header > h1 {
-                    font-size: 27px;
-                }
-
-                main > a {
-                    width: 270px;
-                }
-
-                footer {
-                    width: 100%;
-                    text-align: center;
-                }
-
-                footer > p {
-                    font-size: 16px;
-                }
-            }
-
-            @media screen and (max-width: 365px) {
-                header > img {
-                    width: 100px;
-                }
-
-                header > h1 {
-                    font-size: 22px;
-                }
-
-                main > a {
-                    width: 200px;
-                }
-
-                footer > p {
-                    font-size: 14px;
-                }
+                transition: 0.25s;
             }
         </style>
     </head>
-
-    <body>
-        <header>
-            <img
-                src="../assets/img/sk.png"
-                alt="sultan kautsar"
-                class="animate__animated animate__fadeIn animate__slow"
-            />
-
-            <h1 class="animate__animated animate__fadeIn animate__slow">Sultan Kautsar's Link</h1>
-        </header>
-
-        <main>
-            <a
-                href="https://links.rayatiga.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="animate__animated animate__fadeIn"
+    <body class="container-fluid bg-light overflow-hidden">
+        <!-- Main Content -->
+        <main class="container d-flex flex-column vh-100 justify-content-center align-items-center">
+            <!-- Theme button -->
+            <div
+                class="form-check form-switch text-center d-flex flex-row position-absolute top-0 end-0 p-5"
             >
-                <div class="icons">
-                    <svg
-                        width="25"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="2"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                    </svg>
-                </div>
-                <p>Website</p>
-            </a>
+                <input
+                    class="form-check-input bg-dark border border-1 border-opacity-75 border-secondary"
+                    type="checkbox"
+                    id="lightSwitch"
+                />
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 ms-2"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                    />
+                </svg>
+            </div>
 
-            <a
-                href="https://www.linkedin.com/in/sultankautsar/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="animate__animated animate__fadeIn"
-            >
-                <div class="icons">
-                    <svg
-                        width="25"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="2"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                        />
-                    </svg>
-                </div>
-                <p>LinkedIn</p>
-            </a>
+            <!-- Content -->
+            <h1 class="text-center">Sultan Kautsar &mdash; Link</h1>
+            <p class="lead text-center col-lg-9 fs-6">
+                This is my valuable link. Click the button bellow to redirect to my personal profile
+                of my link.
+            </p>
 
-            <a
-                href="https://github.com/bydzen/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="animate__animated animate__fadeIn"
-            >
-                <div class="icons">
-                    <svg
-                        width="25"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="2"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
-                        />
-                    </svg>
-                </div>
-                <p>Github</p>
-            </a>
-
-            <a
-                href="https://facebook.com/bydzen/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="animate__animated animate__fadeIn"
-            >
-                <div class="icons">
-                    <svg
-                        width="25"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="2"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                    </svg>
-                </div>
-                <p>Facebook</p>
-            </a>
-
-            <a
-                href="https://instagram.com/bydzen"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="animate__animated animate__fadeIn"
-            >
-                <div class="icons">
-                    <svg
-                        width="25"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="2"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
-                        />
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                    </svg>
-                </div>
-                <p>Instagram</p>
-            </a>
-
-            <a
-                href="https://dribbble.com/bydzen"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="animate__animated animate__fadeIn"
-            >
-                <div class="icons">
-                    <svg
-                        width="25"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="2"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
-                        />
-                    </svg>
-                </div>
-                <p>Dribbble</p>
-            </a>
-
-            <a
-                href="mailto:contact@sultankautsar.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="animate__animated animate__fadeIn"
-            >
-                <div class="icons">
-                    <svg
-                        width="25"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="2"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
-                        />
-                    </svg>
-                </div>
-                <p>Email</p>
-            </a>
+            <div class="text-dark fs-4 d-flex justify-content-center flex-wrap gap-2">
+                <a
+                    href="https://linkedin.com/in/sultankautsar"
+                    target="_blank"
+                    class="btn btn-primary"
+                >
+                    <i class="bi bi-linkedin pe-2"></i>LinkedIn
+                </a>
+                <a href="https://instagram.com/bydzen" target="_blank" class="btn btn-danger">
+                    <i class="bi bi-instagram pe-2"></i>Instagram
+                </a>
+                <a href="https://facebook.com/bydzen" target="_blank" class="btn btn-primary">
+                    <i class="bi bi-facebook pe-2"></i>Facebook
+                </a>
+                <a href="https://twitter.com/sultankautsar" target="_blank" class="btn btn-info">
+                    <i class="bi bi-twitter pe-2"></i>Twitter
+                </a>
+                <a href="https://github.com/bydzen" target="_blank" class="btn btn-dark">
+                    <i class="bi bi-github pe-2"></i>GitHub
+                </a>
+                <a href="https://sultankautsar.com/link" target="_blank" class="btn btn-purple">
+                    <i class="bi bi-globe pe-2"></i>Link
+                </a>
+                <a href="https://sultankautsar.com/project" target="_blank" class="btn btn-info">
+                    <i class="bi bi-laptop-fill pe-2"></i>Project
+                </a>
+                <a href="https://rayatiga.com" target="_blank" class="btn btn-success">
+                    <i class="bi bi-briefcase-fill pe-2"></i>Agency
+                </a>
+                <a href="https://dribbble.com/bydzen" target="_blank" class="btn btn-pink">
+                    <i class="bi bi-dribbble pe-2"></i>Dribbble
+                </a>
+                <a href="mailto:contact@sultankautsar.com" class="btn btn-warning">
+                    <i class="bi bi-envelope-fill pe-2"></i>Email
+                </a>
+            </div>
         </main>
 
-        <footer>
-            <p class="animate__animated animate__fadeIn animate__slow">
-                Created by
-
-                <a href="https://sultankautsar.com/" target="_blank" rel="noopener noreferrer"
-                    >Sultan Kautsar</a
-                >
-            </p>
-        </footer>
+        <!-- Switch Light/Dark Mode -->
+        <script src="../assets/js/switch.js"></script>
     </body>
 </html>
