@@ -57,7 +57,6 @@
     }
 
     main > h1 > span {
-        font-weight: 300;
         display: block;
     }
 }
@@ -91,13 +90,57 @@
     main > p {
         font-size: var(--normal-sm);
     }
+
     /* Footer */
     footer {
-        margin-top: -7rem;
+        margin-top: -5.4rem;
     }
 
     /* Sub-page */
     main > ul > li {
         font-size: var(--normal-sm);
+    }
+}
+
+/* Size 260px and below */
+@media (max-width: 260px) {
+    /* Main */
+    main {
+        margin: 0 0.25rem;
+    }
+
+    /* Nav */
+    nav > ul:nth-child(2) {
+        display: block;
+    }
+
+    nav > ul:nth-child(2) > li:nth-child(1),
+    li:nth-child(2),
+    li:nth-child(3) {
+        border: 0;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    nav > ul:nth-child(2) > li:nth-child(2) {
+        margin-left: 0;
+    }
+
+    nav > ul > li {
+        text-align: center;
+    }
+
+    /* Main */
+    main > ul > li {
+        line-height: 1.25rem;
+    }
+
+    /* Scale Element */
+    h1,
+    p,
+    ul,
+    li,
+    a {
+        transform: scale(0.9);
     }
 }
