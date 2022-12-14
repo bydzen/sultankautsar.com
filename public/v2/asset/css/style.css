@@ -129,7 +129,7 @@ p {
 }
 
 main > p {
-    margin: 0.7rem 0;
+    margin-top: 1rem;
     max-width: 70rem;
     line-height: 1.5rem;
 }
@@ -146,12 +146,13 @@ main a:hover {
     border-bottom-color: var(--dark-hover);
 }
 
-/* Sub-page (/link) */
+/* Sub-page (/link, /project, /contact) */
 main > ul {
     margin-top: 1rem;
 }
 
 main > ul > li {
+    font-size: var(--normal-sm);
     list-style: none;
     line-height: 2rem;
     font-weight: 600;
