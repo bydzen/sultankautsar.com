@@ -152,7 +152,6 @@ main > ul {
 }
 
 main > ul > li {
-    font-size: var(--normal-sm);
     list-style: none;
     line-height: 2rem;
     font-weight: 600;
@@ -283,5 +282,10 @@ footer {
     /* Footer */
     footer {
         margin-top: -7rem;
+    }
+
+    /* Sub-page */
+    main > ul > li {
+        font-size: var(--normal-sm);
     }
 }
