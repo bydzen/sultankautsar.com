@@ -1,0 +1,103 @@
+/* Responsive CSS for responsiveness only */
+
+/* Size 745px and below */
+@media (max-width: 745px) {
+    /* Nav */
+    nav {
+        justify-content: center;
+        display: block;
+        padding: 1.25rem 0;
+    }
+
+    nav > ul {
+        justify-content: center;
+    }
+
+    nav > ul:nth-child(2) > li:nth-child(1),
+    li:nth-child(2) {
+        border-right: 0.15rem solid var(--dark);
+        padding-right: 0.7rem;
+    }
+
+    nav > ul:nth-child(1) {
+        margin: 0 0 0.3rem 0;
+    }
+
+    nav > ul:nth-child(1) > li > a:hover {
+        border: 0;
+    }
+
+    nav > ul:nth-child(2) > li > a:hover {
+        color: var(--dark-hover);
+        border: 0;
+    }
+
+    nav > ul:nth-child(2) {
+        margin: 0;
+        gap: 0;
+    }
+
+    nav > ul:nth-child(2) > li:nth-child(2),
+    li:nth-child(3) {
+        margin-left: 0.7rem;
+    }
+
+    nav > ul:nth-child(2) > li:nth-child(3) > a {
+        color: var(--dark);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav > ul:nth-child(2) > li:nth-child(3) > a:hover {
+        color: var(--dark-hover);
+    }
+    /* Main */
+    main {
+        margin: 0 2.5rem;
+    }
+
+    main > h1 > span {
+        font-weight: 300;
+        display: block;
+    }
+}
+
+/* Size 425px and below */
+@media (max-width: 425px) {
+    /* Nav */
+    nav > ul:nth-child(2) {
+        gap: 0;
+    }
+
+    nav > ul:nth-child(2) > li:nth-child(1),
+    li:nth-child(2) {
+        padding-right: 0.5rem;
+    }
+
+    nav > ul:nth-child(2) > li:nth-child(2),
+    li:nth-child(3) {
+        margin-left: 0.5rem;
+    }
+
+    /* Main */
+    main {
+        margin: 0 1rem;
+    }
+
+    main > h1 {
+        font-size: var(--title-sm);
+    }
+
+    main > p {
+        font-size: var(--normal-sm);
+    }
+    /* Footer */
+    footer {
+        margin-top: -7rem;
+    }
+
+    /* Sub-page */
+    main > ul > li {
+        font-size: var(--normal-sm);
+    }
+}
