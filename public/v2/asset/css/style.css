@@ -276,7 +276,6 @@ footer {
     }
 
     main > p {
-        margin-top: 0.2rem;
         font-size: var(--normal-sm);
     }
     /* Footer */
