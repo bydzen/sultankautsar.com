@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <!-- Head Components -->
-        <!-- Document -->
+        <!-- Meta -->
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,27 +11,42 @@
         <meta name="title" content="Sultan Kautsar - Technology Enthusiast" />
         <meta
             name="description"
-            content="Hello, I'm Sultan Kautsar, Founder of Rayatiga. This agencies is engaged in Web and Hosting. I'm also a UI/UX, Web Developer and a Technology Enthusiast."
+            content="Hello, I'm Sultan Kautsar. I'm a Founder at my personal agencies, Rayatiga. This agencies is engaged in Web and Hosting. I'm also a UI/UX, Web Developer and a Technology Enthusiast."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sultankautsar.com/" />
         <meta property="og:title" content="Sultan Kautsar - Technology Enthusiast" />
         <meta
             property="og:description"
-            content="Hello, I'm Sultan Kautsar, Founder of Rayatiga. This agencies is engaged in Web and Hosting. I'm also a UI/UX, Web Developer and a Technology Enthusiast."
+            content="Hello, I'm Sultan Kautsar. I'm a Founder at my personal agencies, Rayatiga. This agencies is engaged in Web and Hosting. I'm also a UI/UX, Web Developer and a Technology Enthusiast."
         />
-        <meta property="og:image" content="https://sultankautsar.com/asset/img/sk-og.png" />
+        <meta property="og:image" content="https://sultankautsar.com/assets/img/sk-og.png" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://sultankautsar.com/" />
         <meta property="twitter:title" content="Sultan Kautsar - Technology Enthusiast" />
         <meta
             property="twitter:description"
-            content="Hello, I'm Sultan Kautsar, Founder of Rayatiga. This agencies is engaged in Web and Hosting. I'm also a UI/UX, Web Developer and a Technology Enthusiast."
+            content="Hello, I'm Sultan Kautsar. I'm a Founder at my personal agencies, Rayatiga. This agencies is engaged in Web and Hosting. I'm also a UI/UX, Web Developer and a Technology Enthusiast."
         />
-        <meta property="twitter:image" content="https://sultankautsar.com/asset/img/sk-og.png" />
+        <meta property="twitter:image" content="https://sultankautsar.com/assets/img/sk-og.png" />
 
         <!-- Title -->
         <title>Sultan Kautsar - Technology Enthusiast</title>
+
+        <!-- Link -->
+        <!-- Bootstrap CSS only -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
+
+        <!-- Bootstrap Icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+        />
 
         <!-- Google Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -52,40 +67,123 @@
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
 
-        <!-- External CSS -->
-        <link rel="stylesheet" href="./asset/css/style.css" />
+        <!-- Script -->
+        <!-- Bootsrtap JavaScript Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Embed CSS Style -->
+        <style>
+            * {
+                font-family: 'Poppins', sans-serif;
+            }
+
+            *::selection {
+                background-color: #212529;
+                color: #f8f9fa;
+            }
+
+            h1 {
+                font-weight: 800;
+                font-size: 2rem;
+            }
+
+            a.linkdesc {
+                background: -webkit-linear-gradient(
+                    -45deg,
+                    rgb(150, 150, 150),
+                    rgb(120, 120, 120),
+                    rgb(190, 190, 190),
+                    rgb(140, 140, 140)
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                opacity: 0.75;
+                transition: 0.25s;
+            }
+
+            a.linkdesc:hover {
+                opacity: 1;
+            }
+
+            #lightSwitch {
+                transform: scale(1.25);
+            }
+
+            .gradient-bg {
+                background: -webkit-linear-gradient(
+                    -45deg,
+                    rgb(225, 225, 225),
+                    rgb(190, 190, 190),
+                    rgb(240, 240, 240),
+                    rgb(210, 210, 210)
+                );
+                padding: 0.5rem 2rem;
+                border: 0.15rem solid #212529;
+                border-radius: 0.5rem;
+                opacity: 0.75;
+                transition: 0.25s;
+            }
+
+            .gradient-bg:hover {
+                opacity: 1;
+            }
+        </style>
     </head>
-    <body>
-        <!-- Container -->
-        <div class="container">
-            <!-- Navbar -->
-            <nav>
-                <ul>
-                    <li><a href="./">Sultan Kautsar</a></li>
-                </ul>
-                <ul>
-                    <li><a href="./link">Links</a></li>
-                    <li><a href="./project">Projects</a></li>
-                    <li><a href="./contact">Contact</a></li>
-                </ul>
-            </nav>
+    <body class="container-fluid bg-light overflow-hidden">
+        <!-- Main Content -->
+        <main class="container d-flex flex-column vh-100 justify-content-center align-items-center">
+            <!-- Theme button -->
+            <div
+                class="form-check form-switch text-center d-flex flex-row position-absolute top-0 end-0 p-5"
+            >
+                <input
+                    class="form-check-input bg-dark border border-1 border-opacity-75 border-secondary"
+                    type="checkbox"
+                    id="lightSwitch"
+                />
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 ms-2"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                    />
+                </svg>
+            </div>
 
-            <!-- Main -->
-            <main>
-                <h1><span>Hello! I'm</span> Sultan Kautsar</h1>
-                <p>
-                    I'm Founder of <a href="https://rayatiga.com/">Rayatiga</a>
-                    &mdash; providing Website Establishment Solutions or as known as WHMCS at
-                    <a href="https://hosting.rayatiga.com/">Rayatiga Hosting</a>, reservation of
-                    top-level domains &mdash; provision of a CMS-based website ecosystem. I'm also a
-                    UI/UX, Web Developer and a Technology Enthusiast.
-                </p>
-            </main>
+            <!-- Content -->
+            <h1 class="text-center">Sultan Kautsar</h1>
+            <p class="lead text-center col-lg-9 fs-6">
+                I'm Founder at my agency,
+                <a href="https://rayatiga.com/" class="fw-bold linkdesc text-decoration-none"
+                    >Rayatiga</a
+                >
+                where is providing Website Establishment Solutions or as known as WHMCS at
+                <a href="https://hosting.rayatiga.com/" class="fw-bold linkdesc text-decoration-none"
+                    >Rayatiga Hosting</a
+                >, reservation of top-level domains, to the provision of a CMS-based website
+                ecosystem. I'm also a UI/UX, Web Developer and a Technology Enthusiast.
+            </p>
 
-            <!-- footer -->
-            <footer>
-                <p>Build and &copy; by Sultan Kautsar</p>
-            </footer>
-        </div>
+            <a
+                href="https://sultankautsar.com/v2/"
+                class="text-center fw-bold gradient-bg mb-4 text-dark text-decoration-none"
+                >See The v2 <i class="bi bi-cup-hot ms-1"></i
+            ></a>
+        </main>
+
+        <!-- Switch Light/Dark Mode -->
+        <script src="./assets/js/switch.js"></script>
     </body>
 </html>
