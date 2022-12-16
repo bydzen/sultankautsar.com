@@ -29,7 +29,7 @@
 
     nav > ul:nth-child(2) > li > a:hover {
         color: var(--dark-hover);
-        border: 0;
+        border-radius: 0;
     }
 
     nav > ul:nth-child(2) {
@@ -50,7 +50,14 @@
 
     nav > ul:nth-child(2) > li:nth-child(3) > a:hover {
         color: var(--dark-hover);
+        border-bottom: 0.1rem solid var(--dark);
     }
+
+    nav > ul:nth-child(2) > li:nth-child(3) > a.active {
+        border-radius: 0;
+        border-bottom: 0.1rem solid var(--dark);
+    }
+
     /* Main */
     main {
         margin: 0 2.5rem;

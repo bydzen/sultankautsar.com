@@ -58,6 +58,10 @@ nav > ul > li > a {
     transition: 0.25s;
 }
 
+nav > ul:nth-child(1) > li > a:hover {
+    border-bottom: 0.01rem solid var(--dark);
+}
+
 nav > ul > li > a:hover {
     color: var(--dark-hover);
     border-bottom: 0.1rem solid var(--dark);
@@ -68,8 +72,12 @@ nav > ul:nth-child(2) > li:nth-child(3) > a:hover {
     border-bottom: 0;
 }
 
-nav > ul > li > a.active {
+nav > ul:nth-child(2) > li > a.active {
     border-bottom: 0.1rem solid var(--dark);
+}
+
+nav > ul:nth-child(2) > li:nth-child(3) > a.active {
+    border-bottom: 0;
 }
 
 /* Main */
