@@ -3,6 +3,9 @@
 /* Container */
 .container {
     height: 100vh;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(3rem);
+    -webkit-backdrop-filter: blur(3rem);
 }
 
 /* Navbar */
@@ -10,10 +13,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.7rem 0;
-    background-color: var(--light);
+    padding: 1.5rem 0;
     width: 100%;
     position: fixed;
+    background: rgba(255, 255, 255, 0.5);
+    border-end-start-radius: 1rem;
+    border-end-end-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 nav > ul {
@@ -140,7 +146,7 @@ main > ul > li > a {
 footer {
     font-size: var(--normal-sm);
     font-weight: 300;
-    color: var(--gray);
+    color: var(--dark);
     margin: 0 1rem;
     margin-top: -2.7rem;
 }
