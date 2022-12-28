@@ -1,0 +1,160 @@
+/* Applied CSS to Index */
+
+/* Container */
+.container {
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(3rem);
+    -webkit-backdrop-filter: blur(3rem);
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    width: 100%;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.5);
+    border-end-start-radius: 1rem;
+    border-end-end-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+nav > ul:nth-child(1) {
+    margin-left: 5rem;
+}
+
+nav > ul:nth-child(2) {
+    margin-right: 5rem;
+}
+
+nav ul:nth-child(1) li {
+    font-size: var(--title);
+    font-weight: 900;
+}
+
+nav > ul:nth-child(2) > li {
+    font-size: var(--normal);
+}
+
+nav > ul:nth-child(2) > li:nth-child(3) > a {
+    color: var(--light);
+    background-color: var(--dark);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+nav > ul > li > a {
+    color: var(--dark);
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+nav > ul:nth-child(1) > li > a:hover {
+    border-bottom: 0.01rem solid var(--dark);
+}
+
+nav > ul > li > a:hover {
+    color: var(--dark-hover);
+    border-bottom: 0.1rem solid var(--dark);
+}
+
+nav > ul:nth-child(2) > li:nth-child(3) > a:hover {
+    color: var(--light-hover);
+    border-bottom: 0;
+}
+
+nav > ul:nth-child(2) > li > a.active {
+    border-bottom: 0.1rem solid var(--dark);
+}
+
+nav > ul:nth-child(2) > li:nth-child(3) > a.active {
+    border-bottom: 0;
+}
+
+/* Main */
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5rem;
+}
+
+main > h1 {
+    font-weight: 900;
+    transition: 0.25s;
+}
+
+main > h1 > span {
+    font-weight: 300;
+}
+
+main > h1,
+p {
+    text-align: center;
+}
+
+main > p {
+    margin-top: 1rem;
+    max-width: 70rem;
+    line-height: 1.5rem;
+}
+
+main > p > a {
+    font-weight: 500;
+    text-decoration: underline;
+    color: var(--dark);
+}
+
+main a:hover {
+    color: var(--dark-hover);
+    border-bottom-color: var(--dark-hover);
+}
+
+/* Sub-page (/link, /project, /contact) */
+main > ul {
+    margin-top: 1rem;
+}
+
+main > ul > li {
+    list-style: none;
+    line-height: 2rem;
+    font-weight: 600;
+    border: 0;
+    margin: 0;
+}
+
+main > ul > li:nth-child(3) {
+    margin: 0;
+}
+
+main > ul > li:nth-child(2) {
+    border: 0;
+}
+
+main > ul > li > a {
+    font-weight: 400;
+    width: fit-content;
+    color: var(--dark);
+    transition: 0.25s;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    font-size: var(--normal-sm);
+    font-weight: 300;
+    color: var(--dark);
+    margin: 0 1rem;
+    margin-top: -2.7rem;
+}
