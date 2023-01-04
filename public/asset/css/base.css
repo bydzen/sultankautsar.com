@@ -38,9 +38,9 @@
 /* Body */
 body {
     background-color: var(--light-bg);
-    overflow: hidden;
+    /* overflow: hidden; */
 
-    background-image: url(../img/circle-scatter-haikei.svg);
+    background-image: url(https://sultankautsar.com/asset/img/circle-scatter-haikei.svg);
     min-width: 100%;
     background-size: cover;
     background-position: center;
