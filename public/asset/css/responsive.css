@@ -98,11 +98,6 @@
         font-size: var(--normal-sm);
     }
 
-    /* Footer */
-    footer {
-        margin-top: -5.4rem;
-    }
-
     /* Sub-page */
     main > ul > li {
         font-size: var(--normal-sm);
