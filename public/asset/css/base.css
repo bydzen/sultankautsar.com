@@ -31,18 +31,11 @@
 }
 
 *::selection {
-    background-color: var(--dark);
-    color: var(--light);
+    background-color: var(--light);
+    color: var(--dark);
 }
 
 /* Body */
 body {
-    background-color: var(--light-bg);
-    /* overflow: hidden; */
-
-    background-image: url(https://sultankautsar.com/asset/img/circle-scatter-haikei.svg);
-    min-width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: var(--dark-bg);
 }

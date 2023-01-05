@@ -3,9 +3,6 @@
 /* Container */
 .container {
     height: 100vh;
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(3rem);
-    -webkit-backdrop-filter: blur(3rem);
 }
 
 /* Navbar */
@@ -16,16 +13,16 @@ nav {
     padding: 1.5rem 0;
     width: 100%;
     position: fixed;
-    background: rgba(255, 255, 255, 0.5);
-    border-end-start-radius: 1rem;
-    border-end-end-radius: 1rem;
+    border-bottom: 0.1rem solid var(--light-hover);
+    border-end-start-radius: 2rem;
+    border-end-end-radius: 2rem;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 nav > ul {
     display: flex;
     list-style: none;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 nav > ul:nth-child(1) {
@@ -45,17 +42,19 @@ nav > ul:nth-child(2) > li {
     font-size: var(--normal);
 }
 
-nav > ul:nth-child(2) > li:nth-child(3) > a {
+nav > ul:nth-child(2) > li:nth-child(4) > a {
     color: var(--light);
     background-color: var(--dark);
     padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
+    border: 0.1rem solid var(--light-hover);
+    border-radius: 0.5rem;
 }
 
 nav > ul > li > a {
     color: var(--dark);
     text-decoration: none;
     transition: 0.25s;
+    color: #ffffff;
 }
 
 nav > ul:nth-child(1) > li > a:hover {
@@ -63,21 +62,20 @@ nav > ul:nth-child(1) > li > a:hover {
 }
 
 nav > ul > li > a:hover {
-    color: var(--dark-hover);
-    border-bottom: 0.1rem solid var(--dark);
+    color: var(--light-hover);
+    border-bottom: 0.1rem solid var(--light-hover);
 }
 
-nav > ul:nth-child(2) > li:nth-child(3) > a:hover {
+nav > ul:nth-child(2) > li:nth-child(4) > a:hover {
     color: var(--light-hover);
-    border-bottom: 0;
 }
 
 nav > ul:nth-child(2) > li > a.active {
-    border-bottom: 0.1rem solid var(--dark);
+    border-bottom: 0.1rem solid var(--light);
 }
 
-nav > ul:nth-child(2) > li:nth-child(3) > a.active {
-    border-bottom: 0;
+nav > ul:nth-child(2) > li:nth-child(4) > a.active {
+    border: 0.1rem solid var(--light);
 }
 
 /* Main */
@@ -88,6 +86,7 @@ main {
     justify-content: center;
     align-items: center;
     margin: 0 5rem;
+    color: #ffffff;
 }
 
 main > h1 {
@@ -113,15 +112,16 @@ main > p {
 main > p > a {
     font-weight: 500;
     text-decoration: underline;
-    color: var(--dark);
+    color: var(--light);
+    transition: 0.25s all;
 }
 
 main a:hover {
-    color: var(--dark-hover);
-    border-bottom-color: var(--dark-hover);
+    color: var(--light-hover);
+    border-bottom-color: var(--light-hover);
 }
 
-/* Sub-page (/link, /project, /contact) */
+/* Sub-page (/link.html, /project.html, /contact.html) */
 main > ul {
     margin-top: 1rem;
 }
@@ -145,7 +145,7 @@ main > ul > li:nth-child(2) {
 main > ul > li > a {
     font-weight: 400;
     width: fit-content;
-    color: var(--dark);
+    color: var(--light);
     transition: 0.25s;
     text-decoration: underline;
 }
@@ -154,7 +154,7 @@ main > ul > li > a {
 footer {
     font-size: var(--normal-sm);
     font-weight: 300;
-    color: var(--dark);
+    color: var(--light-hover);
     margin: 0 1rem;
     margin-top: -3rem;
 }
@@ -162,10 +162,11 @@ footer {
 /* Has Classes */
 .button {
     padding: 0.5rem 1rem;
-    background-color: #000000;
+    background-color: var(--dark);
     color: var(--light);
     text-decoration: none;
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--light-hover);
 }
 
 .button:hover {
