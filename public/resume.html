@@ -70,7 +70,7 @@
                     <!-- List of Navbar Link -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="link.html">Links</a>
@@ -82,10 +82,12 @@
                             <a class="nav-link" href="project.html">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-lg-none" href="resume.html">View Resume</a>
+                            <a class="nav-link d-lg-none active" aria-current="page" href="resume.html">View Resume</a>
                         </li>
                         <li class="nav-item d-none d-lg-block">
-                            <a href="resume.html" class="btn btn-dark px-3 ms-2">View Resume</a>
+                            <a href="resume.html" class="btn btn-dark px-3 ms-2 active" aria-current="page"
+                                >View Resume</a
+                            >
                         </li>
                     </ul>
                 </div>
@@ -96,15 +98,16 @@
         <main
             class="container-fluid bg-light text-center vh-100 d-flex flex-column justify-content-center align-items-center">
             <div class="container">
-                <h1 class="fw-bolder"><span class="fw-lighter">Hello I'm</span> Sultan Kautsar.</h1>
-                <p class="lead">
-                    I'm Founder of <a href="https://rayatiga.com/">Rayatiga Agency</a>
-                    &mdash; providing Website Establishment Solutions or as known as WHMCS at
-                    <a href="https://rayatiga.com/hosting">Rayatiga Web Service</a>, reservation of top-level domains
-                    &mdash; provision of a CMS-based website ecosystem. I'm also a UI/UX, Web Developer and a Technology
-                    Enthusiast.
-                </p>
-                <a href="https://rayatiga.com/" class="btn btn-dark px-3">Visit My Agency</a>
+                <h1 class="fw-bolder"><span class="fw-lighter">My</span> Resume.</h1>
+                <iframe
+                    type="application/pdf"
+                    src="./asset/pdf/sultankautsar-resume-v4.pdf"
+                    frameborder="0"
+                    width="100%"
+                    height="500px"
+                    style="border-radius: 5px"
+                    class="my-2"></iframe>
+                <a href="asset/pdf/sultankautsar-resume-v4.pdf" class="btn btn-dark px-3">Get PDF File</a>
             </div>
         </main>
     </body>
