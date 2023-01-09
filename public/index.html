@@ -40,6 +40,9 @@
         <!-- Bootstrap -->
         <link rel="stylesheet" href="asset/css/bootstrap.css" />
         <script defer type="text/javascript" src="asset/js/bootstrap.js"></script>
+        <!-- AOS -->
+        <link rel="stylesheet" href="asset/css/aos.css" />
+        <script src="asset/js/aos.js"></script>
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -54,8 +57,7 @@
         <nav class="navbar navbar-expand-lg bg-light border-bottom fixed-top">
             <div class="container-fluid px-5 py-2">
                 <!-- Site Title -->
-                <a class="navbar-brand fw-bolder d-none d-lg-block" href="index.html">Sultan Kautsar</a>
-                <a class="navbar-brand fw-bolder d-lg-none" href="index.html">Sultan K</a>
+                <a class="navbar-brand fw-bolder" href="index.html">Sultan Kautsar</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -96,16 +98,32 @@
         <main
             class="container-fluid bg-light text-center vh-100 d-flex flex-column justify-content-center align-items-center">
             <div class="container">
-                <h1 class="fw-bolder"><span class="fw-lighter">Hello I'm</span> Sultan Kautsar.</h1>
-                <p class="lead">
-                    I'm Founder of <a href="https://rayatiga.com/">Rayatiga Agency</a>
+                <h1 class="fw-bolder" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
+                    <span class="fw-lighter">Hello I'm</span> Sultan Kautsar.
+                </h1>
+                <p class="lead" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    I'm Founder of <a href="https://rayatiga.com/index.html" target="_blank">Rayatiga Agency</a>
                     &mdash; providing Website Establishment Solutions or as known as WHMCS at
-                    <a href="https://rayatiga.com/hosting">Rayatiga Web Service</a>, reservation of top-level domains
-                    &mdash; provision of a CMS-based website ecosystem. I'm also a UI/UX, Web Developer and a Technology
-                    Enthusiast.
+                    <a href="https://hosting.rayatiga.com/index.html" target="_blank">Rayatiga Hosting</a>, reservation
+                    of top-level domains &mdash; provision of a CMS-based website ecosystem. I'm also a UI/UX, Web
+                    Developer and a Technology Enthusiast.
                 </p>
-                <a href="https://rayatiga.com/" class="btn btn-dark px-3">Visit My Agency</a>
+                <a
+                    href="https://rayatiga.com/"
+                    class="btn btn-dark px-3"
+                    target="_blank"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    data-aos-duration="1000"
+                    >Visit My Agency</a
+                >
             </div>
         </main>
+
+        <!-- Script -->
+        <!-- AOS -->
+        <script>
+            AOS.init()
+        </script>
     </body>
 </html>
