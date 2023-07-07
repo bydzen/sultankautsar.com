@@ -1,0 +1,11 @@
+@font-face {
+    src: url(space-grotesk.ttf);
+    font-family: 'Space Grotesk';
+    font-display: swap;
+}
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+.single-page {
+    height: calc(100vh - 8.2rem);
+}
